@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react.js-Egypt-covid19-cases/static/css/main.1d7daac4.chunk.css",
+    "main.js": "/react.js-Egypt-covid19-cases/static/js/main.c9264222.chunk.js",
+    "main.js.map": "/react.js-Egypt-covid19-cases/static/js/main.c9264222.chunk.js.map",
+    "runtime-main.js": "/react.js-Egypt-covid19-cases/static/js/runtime-main.3aa3dd9e.js",
+    "runtime-main.js.map": "/react.js-Egypt-covid19-cases/static/js/runtime-main.3aa3dd9e.js.map",
+    "static/js/2.a369a65b.chunk.js": "/react.js-Egypt-covid19-cases/static/js/2.a369a65b.chunk.js",
+    "static/js/2.a369a65b.chunk.js.map": "/react.js-Egypt-covid19-cases/static/js/2.a369a65b.chunk.js.map",
+    "index.html": "/react.js-Egypt-covid19-cases/index.html",
+    "precache-manifest.c57f838937518bb41ace646674c628c8.js": "/react.js-Egypt-covid19-cases/precache-manifest.c57f838937518bb41ace646674c628c8.js",
+    "service-worker.js": "/react.js-Egypt-covid19-cases/service-worker.js",
+    "static/css/main.1d7daac4.chunk.css.map": "/react.js-Egypt-covid19-cases/static/css/main.1d7daac4.chunk.css.map",
+    "static/js/2.a369a65b.chunk.js.LICENSE.txt": "/react.js-Egypt-covid19-cases/static/js/2.a369a65b.chunk.js.LICENSE.txt",
+    "static/media/flag.jpg": "/react.js-Egypt-covid19-cases/static/media/flag.218f2152.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3aa3dd9e.js",
+    "static/js/2.a369a65b.chunk.js",
+    "static/css/main.1d7daac4.chunk.css",
+    "static/js/main.c9264222.chunk.js"
+  ]
+}
