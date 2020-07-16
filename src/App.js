@@ -1,26 +1,52 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from 'react';
+import './App.scss';
+import axios from "axios";
+import Count from './components/Count';
+import Header from './components/Header';
+import Chart from "./components/Chart";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [data, setData] = useState({
+        confirmed: null,
+        deaths: null,
+        recovered: null,
+        lastUpdate: null
+    });
+
+    useEffect(() => {
+        getData();
+    },[])
+
+    const getData = () => {
+        axios.get(`https://covid19.mathdro.id/api/countries/egypt`)
+            .then(res => {
+                console.log(res.data);
+                const { confirmed, deaths, recovered, lastUpdate } = res.data;
+                setData({
+                    confirmed: confirmed.value,
+                    deaths: deaths.value,
+                    recovered: recovered.value,
+                    lastUpdate: lastUpdate
+                });
+            })
+            .catch(err => console.log(err));
+    }    
+
+    return (
+        <div className="App container">
+            <Header data={data}/>
+            <div className="row count-chart">
+                <div className="col-lg-4">
+                    <Count data={data}/>
+                </div>
+                <div className="col-lg-8">
+                    <Chart data={data} />
+                </div>
+            </div>
+        </div>
+    );
 }
 
 export default App;
